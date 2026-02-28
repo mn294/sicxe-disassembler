@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a two-pass linking loader and disassembler for the SIC/XE architecture in C++.
+This project implements a two-pass disassembler and linking loader for the SIC/XE architecture in C++.
 
 It supports external symbol resolution (EXTDEF / EXTREF), relocation using modification records, and disassembly of object code formats 1–4.
 
