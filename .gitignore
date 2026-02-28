@@ -1,0 +1,18 @@
+# Compiled output
+*.exe
+*.out
+*.o
+*.obj
+
+# Mac files
+.DS_Store
+
+# Build directories
+build/
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.log

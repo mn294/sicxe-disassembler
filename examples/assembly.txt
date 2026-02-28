@@ -1,0 +1,46 @@
+CHARIO  START   2000    
+2000  	          LDX     #L002       052000
+2003  	L002      CLEAR   A           B400
+2005  	          CLEAR   S           B440
+2007  	          FIX                 C4
+2008  	          LDA     L00C        032056
+200B  	          STA     L000        0F2056
+200E  	          +LDB    #L001       69102C22 *M
+                BASE    L001        
+2012  	          LDA     2C1F        034FFD
+2015  	          STA     2C1C        0F4FFA
+2018  	          LDCH    2C4C        53402A
+201B  	          STCH    L014        574028
+201E  	          LDCH    2C4D        53402B
+2021  	          STCH    2C4B        574029
+2024  	          RD      L014        DB4028
+2027  	          STCH    L001,X      57C000
+202A  	L003      COMP    L015        2B4035
+202D  	          JEQ     L004        332005
+2030  	          TIXR    L           B820
+2032  	          JLT     2024        3B2FEF
+2035  	L004      STX     L000        13202C
+2038  	          LDX     #0000       050000
+203B  	L005      COMPR   X,S         A014
+203D  	          LDCH    2C4E,X      53C02C
+2040  	          WD      2C4D        DF402B
+2043  	          TIX     2C54        2F4032
+2046  	L008      JLT     203D        3B2FF4
+2049  	          LDX     #0000       050000
+204C  	L009      LDCH    L001,X      53C000
+204F  	L00B      WD      2C4D        DF402B
+2052  	          TIX     @L000       2E200F
+2055  	          JLT     L009        3B2FF4
+2058  	          LDCH    L015        534035
+205B  	          WD      2C4D        DF402B
+205E  	          RSUB                4C0000
+2061  	L00C      WORD    0           000000
+2064  	L000      RESW    1001        
+2C1F  	L01D      WORD    40          000028
+2C22  	L001      RESW    14          
+2C4C  	L01E      BYTE    X'F1'       F1
+2C4D  	          LDX     #2570       05494E
+2C50  	          +LDCH   5543A       5055543A
+2C54  	L01F      WORD    6           000006
+2C57  	L015      BYTE    X'0A'       0A
+                END     2000        
